@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f5">
+  <meta name="description" content="NOVA — zamonaviy texnika onlayn do‘koni. Telefonlar, noutbuklar, audio va aqlli soatlar.">
+  <title>NOVA — Texnika. Oddiy. Chiroyli.</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <p><span>Yangi.</span> iPhone 15 Pro endi NOVA’da.</p>
+    <button class="text-link" data-product="phone-x1">Batafsil <span aria-hidden="true">↗</span></button>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#" aria-label="NOVA bosh sahifa">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c2.2 7.7 6.3 11.8 14 14-7.7 2.2-11.8 6.3-14 14C13.8 22.3 9.7 18.2 2 16 9.7 13.8 13.8 9.7 16 2Z" fill="currentColor"/></svg>
+        <span>nova</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Asosiy menyu">
+        <a href="#products">Mahsulotlar</a>
+        <a href="#new">Yangiliklar</a>
+        <a href="#why-nova">Nega Nova?</a>
+        <a href="#support">Yordam</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" id="search-open" aria-label="Qidirish">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        </button>
+        <button class="icon-button desktop-only" id="favorites-open" aria-label="Sevimlilar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l1.2 1.2L12 21l7.6-7.6 1.2-1.2a5.4 5.4 0 0 0 0-7.6Z"/></svg>
+          <span class="action-dot" id="favorites-count" hidden></span>
+        </button>
+        <button class="icon-button" id="cart-open" aria-label="Savatni ochish">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 13H5L6 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="cart-count" id="cart-count" hidden>0</span>
+        </button>
+        <button class="icon-button menu-button" id="menu-toggle" aria-label="Menyuni ochish" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil menyu" hidden>
+      <a href="#products">Mahsulotlar</a>
+      <a href="#new">Yangiliklar</a>
+      <a href="#why-nova">Nega Nova?</a>
+      <a href="#support">Yordam</a>
+      <button id="mobile-favorites">Sevimlilar</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-shell" id="new" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow light"><span></span> IPHONE 15 PRO</div>
+        <h1 id="hero-title">Titan. Kuchli.<br><span>Juda Pro.</span></h1>
+        <p>iPhone 15 Pro — mustahkam titan dizayn, A17 Pro chip va professional kamera tizimi. Apple’ning eng kuchli iPhone tajribasi.</p>
+        <div class="hero-actions">
+          <button class="button button-light" id="hero-buy">Xarid qilish <span aria-hidden="true">↗</span></button>
+          <button class="button button-ghost" data-product="phone-x1">Batafsil <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="hero-price">13 490 000 so‘mdan boshlanadi</p>
+      </div>
+      <div class="hero-visual" aria-label="iPhone 15 Pro mahsulot rasmi">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1200&q=90" alt="Titan rangli iPhone 15 Pro" fetchpriority="high">
+        <div class="floating-spec spec-top"><span class="spec-icon">✦</span><div><strong>A17 Pro chip</strong><small>Kichik. Juda kuchli.</small></div></div>
+        <div class="floating-spec spec-bottom"><strong>48 MP</strong><small>Har bir detal muhim.</small></div>
+      </div>
+      <div class="hero-bottom-note"><span>01</span> Apple. Yangi avlod. Yangi imkoniyatlar.</div>
+    </section>
+
+    <section class="benefits page-shell" aria-label="Do‘kon afzalliklari">
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        <div><strong>Bepul yetkazib berish</strong><span>5 mln so‘mdan yuqori xaridga</span></div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3Z"/><path d="m8 12 2.5 2.5L16 9"/></svg>
+        <div><strong>12 oy kafolat</strong><span>Har bir mahsulotga ishonch bilan</span></div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg>
+        <div><strong>30 kun qaytarish</strong><span>Savollarsiz va ortiqcha tashvishsiz</span></div>
+      </div>
+      <div class="benefit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-2a8 8 0 0 1 16 0v2M4 13h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 1-2ZM20 13h-3v6h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-1-2ZM17 19c0 2-2 2-5 2"/></svg>
+        <div><strong>Doim yoningizda</strong><span>Har kuni 24/7 onlayn yordam</span></div>
+      </div>
+    </section>
+
+    <section class="products-section page-shell" id="products" aria-labelledby="products-title">
+      <div class="section-heading">
+        <div><div class="eyebrow">APPLE MAHSULOTLARI</div><h2 id="products-title">O‘zingizga mosini toping.</h2></div>
+        <p>Kundalik hayotingizni yengillashtiradigan,<br>bir-birini mukammal to‘ldiradigan texnikalar.</p>
+      </div>
+      <div class="product-toolbar">
+        <div class="category-tabs" role="group" aria-label="Mahsulot toifalari">
+          <button class="category-tab active" data-category="all">Barchasi</button>
+          <button class="category-tab" data-category="phone">Telefonlar</button>
+          <button class="category-tab" data-category="laptop">Noutbuklar</button>
+          <button class="category-tab" data-category="audio">Audio</button>
+          <button class="category-tab" data-category="watch">Soatlar</button>
+          <button class="category-tab" data-category="tablet">Planshetlar</button>
+        </div>
+        <span class="product-count" id="product-count"></span>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span>◌</span><h3>Hozircha bu yer bo‘sh</h3><p>Boshqa toifani tanlang yoki barcha mahsulotlarni ko‘ring.</p>
+        <button class="button button-dark" id="show-all">Barcha mahsulotlar</button>
+      </div>
+    </section>
+
+    <section class="collections page-shell" aria-label="Tanlangan Apple mahsulotlari">
+      <article class="collection collection-dark">
+        <div class="collection-copy"><div class="eyebrow light">MACBOOK PRO 14” M3</div><h2>Katta ishlar.<br>Yengil his.</h2><p>Apple M3 Pro chip, Liquid Retina XDR ekran va 22 soatgacha batareya. Ijodingiz hech qachon to‘xtamasin.</p><button class="button button-light" data-product="book-pro">Tanlash <span>→</span></button></div>
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85" alt="Ochiq MacBook Pro noutbuki" loading="lazy">
+      </article>
+      <article class="collection collection-sand">
+        <div class="collection-copy"><div class="eyebrow">AIRPODS MAX</div><h2>Faqat siz.<br>Va musiqa.</h2><p>Faol shovqin kamaytirish va 20 soatgacha tinglash.</p><button class="round-arrow" data-product="sound-max" aria-label="AirPods Max haqida batafsil">↗</button></div>
+        <img src="https://unsplash.com/photos/Q2uV5TkjNz8/download?force=true&w=900" alt="AirPods Max quloqchinlari" loading="lazy">
+      </article>
+    </section>
+
+    <section class="why-section page-shell" id="why-nova" aria-labelledby="why-title">
+      <div class="why-intro"><div class="eyebrow">NEGA NOVA?</div><h2 id="why-title">Apple texnikasi.<br>Oson tanlov.</h2><p>Biz sizga ko‘proq qurilma emas, ko‘proq imkoniyat taklif qilamiz. NOVA’da Apple mahsulotlarini tanlash, xarid qilish va ulardan foydalanish oddiy va qulay.</p><a href="#products" class="underlined-link">Apple kolleksiyasini ko‘rish <span>↗</span></a></div>
+      <div class="why-cards">
+        <article><span class="why-number">01</span><div class="why-icon">✦</div><h3>Birgalikda yaxshiroq</h3><p>iPhone, Mac, iPad va Apple Watch bir-biri bilan mukammal ishlaydi.</p></article>
+        <article><span class="why-number">02</span><div class="why-icon">◎</div><h3>Tabiatga g‘amxo‘rlik</h3><p>Apple mahsulotlarida ko‘proq qayta ishlangan materiallar ishlatiladi.</p></article>
+        <article><span class="why-number">03</span><div class="why-icon">◇</div><h3>Maxfiylik birinchi o‘rinda</h3><p>Apple’ning o‘rnatilgan himoyasi ma’lumotlaringizni sizniki qilib saqlaydi.</p></article>
+      </div>
+    </section>
+
+    <section class="support-section page-shell" id="support">
+      <div><div class="eyebrow light">NOVA CARE</div><h2>Savolingiz bormi?<br>Biz shu yerdamiz.</h2></div>
+      <div class="support-copy"><p>Tanlash, sozlash yoki foydalanish bo‘yicha yordam kerakmi? Mutaxassislarimiz har kuni, istalgan vaqtda siz bilan.</p><button class="button button-light" id="support-chat">Suhbatni boshlash <span>↗</span></button></div>
+      <div class="support-star" aria-hidden="true">✳</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-top">
+      <div class="footer-newsletter"><a class="brand" href="#"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2c2.2 7.7 6.3 11.8 14 14-7.7 2.2-11.8 6.3-14 14C13.8 22.3 9.7 18.2 2 16 9.7 13.8 13.8 9.7 16 2Z" fill="currentColor"/></svg><span>nova</span></a><h3>Yangiliklardan xabardor bo‘ling.</h3><p>Yangi mahsulotlar va maxsus takliflar. Ortiqcha xatlarsiz.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Elektron pochta</label><input type="email" id="newsletter-email" placeholder="Email manzilingiz" required><button type="submit" aria-label="Obuna bo‘lish">→</button></form></div>
+      <div class="footer-links"><div><h4>Do‘kon</h4><a href="#products">Telefonlar</a><a href="#products">Noutbuklar</a><a href="#products">Audio</a><a href="#products">Aksessuarlar</a></div><div><h4>Yordam</h4><a href="#support">Biz bilan bog‘laning</a><a href="#support">Yetkazib berish</a><a href="#support">Qaytarish</a><a href="#support">Kafolat</a></div><div><h4>NOVA haqida</h4><a href="#why-nova">Bizning hikoyamiz</a><a href="#why-nova">Ekologiya</a><a href="#why-nova">Maxfiylik</a><a href="#why-nova">Yangiliklar</a></div></div>
+    </div>
+    <div class="page-shell footer-bottom"><p>© 2026 NOVA. Demo loyiha — haqiqiy do‘kon emas.</p><div><a href="#">Maxfiylik siyosati</a><a href="#">Foydalanish shartlari</a><span>O‘zbekiston <b>UZ</b></span></div></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">XARIDLARINGIZ</span><h2 id="cart-title">Savat <span id="cart-title-count">(0)</span></h2></div><button class="close-button" id="cart-close" aria-label="Savatni yopish">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><div class="empty-bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l1 13H5L6 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></div><h3>Savatingiz hozircha bo‘sh</h3><p>O‘zingizga yoqqan mahsulotni tanlang, u shu yerda paydo bo‘ladi.</p><button class="button button-dark" id="cart-shop">Xaridni boshlash</button></div>
+    <div class="cart-summary" id="cart-summary" hidden><div class="delivery-progress"><div><span>Bepul yetkazib berish</span><strong>✓</strong></div><div class="progress-track"><span></span></div><small>Buyurtmangiz bepul yetkaziladi</small></div><div class="total-row"><span>Jami</span><strong id="cart-total">0 so‘m</strong></div><p>Yetkazib berish va to‘lov keyingi bosqichda.</p><button class="button button-dark full-width" id="checkout-open">Rasmiylashtirish <span>→</span></button><div class="secure-note">⌾ Xavfsiz demo to‘lov</div></div>
+  </aside>
+
+  <dialog class="product-dialog" id="product-dialog"><button class="close-button dialog-close" aria-label="Yopish">×</button><div id="product-dialog-content"></div></dialog>
+  <dialog class="search-dialog" id="search-dialog"><div class="search-header"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><label class="sr-only" for="search-input">Mahsulot qidirish</label><input id="search-input" type="search" placeholder="Nimani qidiryapsiz?" autocomplete="off"><button class="close-button dialog-close" aria-label="Qidiruvni yopish">×</button></div><div class="search-body"><p class="search-hint" id="search-hint">Mashhur qidiruvlar</p><div class="popular-searches" id="popular-searches"><button>iPhone 15</button><button>MacBook</button><button>AirPods</button><button>Apple Watch</button></div><div class="search-results" id="search-results"></div></div></dialog>
+  <dialog class="checkout-dialog" id="checkout-dialog"><button class="close-button dialog-close" aria-label="Yopish">×</button><div id="checkout-form-wrap"><div class="eyebrow">BUYURTMANI YAKUNLASH</div><h2>Deyarli tayyor.</h2><p class="checkout-lead">Ma’lumotlaringizni qoldiring. Bu demo buyurtma — to‘lov olinmaydi.</p><div class="checkout-total"><span>Buyurtma summasi</span><strong id="checkout-total"></strong></div><form id="checkout-form"><label>Ismingiz<input type="text" name="name" placeholder="Ism va familiya" required minlength="3"></label><label>Telefon raqamingiz<input type="tel" name="phone" placeholder="+998 90 123 45 67" required minlength="9"></label><label>Yetkazib berish manzili<input type="text" name="address" placeholder="Shahar, ko‘cha, uy" required minlength="5"></label><button class="button button-dark full-width" type="submit">Demo buyurtmani tasdiqlash <span>→</span></button></form></div><div class="order-success" id="order-success" hidden><div class="success-check">✓</div><div class="eyebrow">RAHMAT!</div><h2>Buyurtma qabul qilindi.</h2><p>Demo buyurtmangiz muvaffaqiyatli yaratildi. Haqiqiy to‘lov olinmadi va hech qanday ma’lumot yuborilmadi.</p><button class="button button-dark dialog-close">Xaridga qaytish</button></div></dialog>
+  <dialog class="chat-dialog" id="chat-dialog"><button class="close-button dialog-close" aria-label="Yopish">×</button><div class="chat-agent"><span>N</span><div><strong>NOVA yordamchisi</strong><small><i></i> Onlayn</small></div></div><div class="chat-message">Salom! NOVA’ga xush kelibsiz. Mahsulot tanlashda yordam bera olaman.</div><p>Qanday mahsulot qidiryapsiz?</p><div class="chat-options"><button data-chat-category="phone">Telefon</button><button data-chat-category="laptop">Noutbuk</button><button data-chat-category="audio">Audio</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toast-icon">✓</span><p id="toast-message"></p></div>
+  <script src="script.js"></script>
+</body>
+</html>
